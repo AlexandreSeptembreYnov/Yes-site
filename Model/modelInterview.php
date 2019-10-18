@@ -53,13 +53,3 @@ function delInterview($idInterview)
         die('Erreur : ' . $e->getMessage());
     }
 }
-
-function setInterview($idInterview)
-{
-    $db = dbConnect();
-    $req = $db->prepare('SELECT idInterview, Titre, Description, Video, datePublication FROM interview WHERE idInterview = ?;');
-    $req->execute($idInterview);
-    $post = $req->fetch();
-
-    return $post;
-}

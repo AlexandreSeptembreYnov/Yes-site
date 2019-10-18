@@ -14,7 +14,7 @@ CREATE TABLE Interview
 	Description varchar(5000),
 	DatePublication DATE
 );
-CREATE TABLE article
+CREATE TABLE Article
 (
 	idArticle int PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	Description varchar(5000),
@@ -33,7 +33,7 @@ CREATE TABLE MiniSerie
 );
 CREATE TABLE Colaboration
 (
-	idMiniSerie int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	idColaboration int PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	Nom varchar(300) NOT NULL,
 	Image varchar(5000),
 	Lien varchar(5000)

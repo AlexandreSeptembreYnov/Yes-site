@@ -59,13 +59,3 @@ function delArticle($idArticle)
         die('Erreur : '.$e->getMessage());
     }
 }
-
-function setArticle($idArticle)
-{
-    $db = dbConnect();
-    $req = $db->prepare('SELECT idArticle, Titre, Description, Image, Categorie,datePublication FROM article WHERE idArticle = ?;');
-    $req->execute($idArticle);
-    $post = $req->fetch();
-
-    return $post;
-}

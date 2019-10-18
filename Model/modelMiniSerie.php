@@ -54,13 +54,3 @@ function delMiniSerie($idMiniSerie)
         die('Erreur : ' . $e->getMessage());
     }
 }
-
-function setMiniSerie($idMiniSerie)
-{
-    $db = dbConnect();
-    $req = $db->prepare('SELECT idMiniSerie, Titre, Description, Video, datePublication FROM MiniSerie WHERE idMiniSerie = ?;');
-    $req->execute($idMiniSerie);
-    $post = $req->fetch();
-
-    return $post;
-}
