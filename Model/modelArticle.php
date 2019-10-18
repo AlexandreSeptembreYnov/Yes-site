@@ -1,4 +1,5 @@
 <?php
+include_once 'dbConnection.php';
 function getArticle()
 {
     $db = dbConnect();
@@ -36,7 +37,22 @@ function addArticle($Titre, $Description, $Image, $Categorie)
     {
         $req = $db->prepare('INSERT INTO article (Titre, Description, Image, Categorie,datePublication) VALUES (?, ?, ?, ?, NOW());');
         $req->execute($Titre, $Description, $Image, $Categorie);
-        return 1;
+        return True;
+    }
+    catch(Exception $e)
+    {
+        die('Erreur : '.$e->getMessage());
+    }
+}
+
+function delArticle($idArticle)
+{
+    $db = dbConnect();
+    try
+    {
+        $req = $db->prepare('DELETE FROM article WHERE idArticle = ?');
+        $req->execute($idArticle);
+        return True;
     }
     catch(Exception $e)
     {
@@ -53,4 +69,3 @@ function setArticle($idArticle)
 
     return $post;
 }
-?>

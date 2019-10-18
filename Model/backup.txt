@@ -6,7 +6,7 @@ admin id/username/password
 
 
 
-CREATE TABLE interview 
+CREATE TABLE Interview
 (
 	idInterview int PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	Titre varchar(300) NOT NULL,
