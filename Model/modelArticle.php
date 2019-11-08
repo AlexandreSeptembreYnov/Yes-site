@@ -1,10 +1,10 @@
 <?php
-include_once 'dbConnection.php';
-function getArticle()
+include_once ('dbConnection.php');
+function getArticle($Categorie)
 {
     $db = dbConnect();
-    $req = $db->prepare('SELECT idArticle, Titre, Description, Image, Categorie,datePublication FROM article ORDER BY datePublication DESC ;');
-    $req->execute();
+    $req = $db->prepare('SELECT idArticle, Titre, Description, Image, Categorie, datePublication FROM article WHERE Categorie = ? ORDER BY datePublication DESC ;');
+    $req->execute($Categorie);
     $post = $req->fetch();
 
     return $post;
@@ -20,11 +20,11 @@ function getOneArticle($idArticle)
     return $post;
 }
 
-function getLastArticle()
+function getLastArticle($Categorie)
 {
     $db = dbConnect();
-    $req = $db->prepare('SELECT idArticle, Titre, Description, Image, Categorie,datePublication FROM article ORDER BY datePublication DESC LIMIT 1;');
-    $req->execute();
+    $req = $db->prepare('SELECT idArticle, Titre, Description, Image, Categorie,datePublication FROM article WHERE Categorie = ? ORDER BY datePublication DESC LIMIT 1;');
+    $req->execute($Categorie);
     $post = $req->fetch();
 
     return $post;

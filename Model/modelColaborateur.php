@@ -1,6 +1,6 @@
 <?php
 
-
+require_once('dbConnection.php');
 function getColaboration()
 {
     $db = dbConnect();

@@ -5,7 +5,7 @@ colabo id/nom/image/lien
 admin id/username/password
 
 
-
+CREATE TYPE categorie AS ENUM ('Metier', 'Startup');
 CREATE TABLE Interview
 (
 	idInterview int PRIMARY KEY NOT NULL AUTO_INCREMENT,
@@ -20,9 +20,10 @@ CREATE TABLE Article
 	Description varchar(5000),
 	Titre varchar(300) NOT NULL,
 	Image varchar(5000),
-	Categorie varchar(50) NOT NULL,
+	Categorie categorie NOT NULL,
 	DatePublication DATE
 );
+
 CREATE TABLE MiniSerie
 (
 	idMiniSerie int PRIMARY KEY NOT NULL AUTO_INCREMENT,
