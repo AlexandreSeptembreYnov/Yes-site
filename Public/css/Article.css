@@ -1,0 +1,26 @@
+hr {
+  margin: 10px auto;
+  width: 10%;
+  height: 2px;
+  background-color: #f90;
+  border: none; /*on supprime le style par défaut*/
+}
+
+hr {
+  margin: 10px auto;
+  width: 10%;
+  height: 2px;
+  background-color: #f90;
+  border: none; /*on supprime le style par défaut*/
+}
+
+.header-img {
+    width: 500px;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.article {
+    padding: 50px 5px;
+    font-weight: 700;
+    font-size: 25px;
+}
