@@ -1,5 +1,5 @@
 <?php
-require('Controleur/controller.php');
+require('Controleur/controleur.php');
 
 if (isset($_GET['action'])) {
     if ($_GET['action'] == 'Connection') {
@@ -55,5 +55,5 @@ if (isset($_GET['action'])) {
     }
 }
 else {
-    lastArticle();
+    acceuil();
 }

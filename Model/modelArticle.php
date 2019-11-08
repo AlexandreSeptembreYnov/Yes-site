@@ -50,7 +50,7 @@ function delArticle($idArticle)
     $db = dbConnect();
     try
     {
-        $req = $db->prepare('DELETE FROM article WHERE idArticle = ?');
+        $req = $db->prepare('DELETE FROM article WHERE id )Article = ?');
         $req->execute($idArticle);
         return True;
     }
