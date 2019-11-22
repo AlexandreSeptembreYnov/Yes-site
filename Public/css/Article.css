@@ -6,14 +6,6 @@ hr {
   border: none; /*on supprime le style par défaut*/
 }
 
-hr {
-  margin: 10px auto;
-  width: 10%;
-  height: 2px;
-  background-color: #f90;
-  border: none; /*on supprime le style par défaut*/
-}
-
 .header-img {
     width: 500px;
     margin-left: 25%;
