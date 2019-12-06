@@ -142,7 +142,8 @@ body, html {
 
  .Underscore_Yellow{
   width: 15%;
-  margin-left: 41%;
+   margin-left: 41%;
+   padding: 1%;
  }
 
  .Title_NDA{
@@ -179,6 +180,11 @@ body, html {
 
  .equipe{
    width: 15%;
+   padding-top: 2%;
  }
+
+ .Underscore_Yellow_ping{
+  width: 13%;
+  margin-left: 43% !important;
 
  
