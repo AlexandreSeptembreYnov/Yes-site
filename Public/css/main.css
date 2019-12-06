@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
+=======
+/* @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css); */
+>>>>>>> Stashed changes
 
 body, html {
     height: 100%;
@@ -22,6 +26,7 @@ body, html {
     margin-top: 15%;
 }
 
+<<<<<<< Updated upstream
 
 .topnav {
     overflow: hidden;
@@ -44,11 +49,32 @@ body, html {
     
     color: black;
     border-bottom: 3px solid #f9b233;
+=======
+.navbar{
+  font-family: "Bebas Neue", Bold!important;
+  margin-left: 12% !important;
+
+}
+
+.navlink {
+  color: black !important;
+  text-decoration: none;
+  padding-bottom: 0 !important;
+}
+
+
+  .navbar a:hover {
+
+    border-bottom: 3px solid #f9b233 !important;
+    
+
+>>>>>>> Stashed changes
 
   }
   
   
 
+<<<<<<< Updated upstream
 hr{
     
     width: 75%;
@@ -57,6 +83,22 @@ hr{
     border: none; 
   }
 
+=======
+ .underline{
+    
+    width: 60% !important;
+    height: 1px !important;
+    background-color: black;
+    border: none !important;
+    position: absolute !important; 
+    margin-left: 19% !important;
+   
+    
+  }
+
+  
+
+>>>>>>> Stashed changes
   /* FOOTER */
 
   
@@ -72,7 +114,11 @@ hr{
 
   .Yes_Footer{
     width: 200px;
+<<<<<<< Updated upstream
     margin-top: 15%;
+=======
+    margin-top: 20%;
+>>>>>>> Stashed changes
 
   }
 
@@ -104,4 +150,83 @@ hr{
 
   }
 
+<<<<<<< Updated upstream
   
+=======
+/* Accueil */
+
+ .logo_interro{
+   /* margin-left: 46% !important; */
+   width : 6%;
+ }
+
+ .Title_QSN{
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  /* margin-left: 38%; */
+  
+ }
+
+ .Inter_mois{
+   background-color: #111427 !important;
+   color: #ffffff;
+ }
+
+ .télé{
+   margin-left: 40%;
+   width: 20%;
+   padding: 3%;
+ }
+
+ .h3{
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+ }
+
+ .underline_yellow{
+   width: 30%;
+   margin-left: 35%;
+ }
+
+ .Underscore_Yellow{
+  width: 15%;
+  margin-left: 41%;
+ }
+
+ .Title_NDA{
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  /* margin-left: 36%; */
+ }
+
+ .logo_article{
+  width : 6%;
+  /* margin-left: 48% !important; */
+ }
+
+ .Underscore_Yellow_article{
+  width: 13%;
+  margin-left: 43% !important;
+}
+  
+ .text{
+   padding: 10%;
+ }
+
+ .text_NDA{
+   padding: 3%;
+ }
+
+ .team{
+   background-color: #f9b233 !important;
+ }
+
+ .underline_black{
+   width: 30%;
+   padding: 3%;
+ }
+
+ .equipe{
+   width: 15%;
+ }
+
+ 
+>>>>>>> Stashed changes
