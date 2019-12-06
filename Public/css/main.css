@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-@import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css);
-=======
 /* @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css); */
->>>>>>> Stashed changes
 
 body, html {
     height: 100%;
@@ -26,30 +22,6 @@ body, html {
     margin-top: 15%;
 }
 
-<<<<<<< Updated upstream
-
-.topnav {
-    overflow: hidden;
-    margin-left: 22%;
-    text-decoration: none;
-  }
-  
-  .topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    padding-bottom: 2px;
-    text-decoration: none;
-    font-family: "Bebas Neue", Bold;
-    
-  }
-  
-  .topnav a:hover {
-    
-    color: black;
-    border-bottom: 3px solid #f9b233;
-=======
 .navbar{
   font-family: "Bebas Neue", Bold!important;
   margin-left: 12% !important;
@@ -68,22 +40,11 @@ body, html {
     border-bottom: 3px solid #f9b233 !important;
     
 
->>>>>>> Stashed changes
 
   }
   
   
 
-<<<<<<< Updated upstream
-hr{
-    
-    width: 75%;
-    height: 10px;
-    background-color: black;
-    border: none; 
-  }
-
-=======
  .underline{
     
     width: 60% !important;
@@ -98,7 +59,6 @@ hr{
 
   
 
->>>>>>> Stashed changes
   /* FOOTER */
 
   
@@ -114,11 +74,7 @@ hr{
 
   .Yes_Footer{
     width: 200px;
-<<<<<<< Updated upstream
-    margin-top: 15%;
-=======
     margin-top: 20%;
->>>>>>> Stashed changes
 
   }
 
@@ -150,9 +106,6 @@ hr{
 
   }
 
-<<<<<<< Updated upstream
-  
-=======
 /* Accueil */
 
  .logo_interro{
@@ -229,4 +182,3 @@ hr{
  }
 
  
->>>>>>> Stashed changes
