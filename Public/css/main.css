@@ -71,7 +71,10 @@ body, html {
 
   .Yes_Footer{
     width: 200px;
-    margin-top: 20%;
+    margin-top: 7%;
+
+    position: fixed !important;
+
 
   }
 
@@ -102,6 +105,12 @@ body, html {
     font-size: 20px;
 
   }
+
+  .vertical{
+    width: 2%;
+    margin-top: 40%;
+    /* position: fixed; */
+}
 
 /* Accueil */
 
