@@ -1,10 +1,10 @@
 <?php
 
 require_once('dbConnection.php');
-function getColaboration()
+function getCollaboration()
 {
     $db = dbConnect();
-    $req = $db->prepare('SELECT idColaboration, Nom, Lien, Image FROM Colaboration ORDER BY idColaboration DESC ;');
+    $req = $db->prepare('SELECT idCollaboration, Nom, Lien, Image FROM Collaboration ORDER BY idCollaboration DESC ;');
     $req->execute();
     $post = $req->fetch();
 
@@ -12,24 +12,24 @@ function getColaboration()
 }
 
 
-function addColaboration($Nom, $Image, $Lien)
+function addCollaboration($Nom, $Image, $Lien)
 {
     $db = dbConnect();
     try {
-        $req = $db->prepare('INSERT INTO Colaboration (Nom, Image, Lien VALUES (?, ?, ?);');
-        $req->execute($Nom, $Image, $Lien );
+        $req = $db->prepare('INSERT INTO Collaboration (Nom, Image, Lien VALUES (?, ?, ?);');
+        $req->execute([$Nom, $Image, $Lien]);
         return True;
     } catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());
     }
 
 }
-function delColaboration($idColaboration)
+function delCollaboration($idCollaboration)
 {
     $db = dbConnect();
     try {
-        $req = $db->prepare('DELETE FROM Colaboration WHERE idColaboration = ?');
-        $req->execute($idColaboration);
+        $req = $db->prepare('DELETE FROM Collaboration WHERE idCollaboration = ?');
+        $req->execute([$idCollaboration]);
         return True;
     } catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());

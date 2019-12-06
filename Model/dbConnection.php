@@ -3,11 +3,7 @@ function dbConnect()
 {
     try
     {
-        $init_datas = parse_ini_file("config/config.ini");
-        $url = $init_datas['url'];
-        $login = $init_datas['login'];
-        $pass = $init_datas['pass'];
-        $db = new PDO($url, $login, $pass);
+        $db = new PDO("mysql:host=localhost;dbname=testy;charset=utf8", "root", "");
         return $db;
     }
     catch(Exception $e)
