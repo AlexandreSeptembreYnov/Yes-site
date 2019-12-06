@@ -1,0 +1,197 @@
+/* @import url(//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css); */
+
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+  /* MEDIA */
+  
+  /* HEADER & NAVBAR */
+  .carre {
+    width:100%;
+    height: 100%;
+    height:100vh;
+    background:#f9b233;
+    opacity: 1;
+    
+  }
+
+.Yes{
+    width: 100vh;
+    margin-left: 20%;
+    margin-top: 15%;
+}
+
+.navbar{
+  font-family: "Bebas Neue", Bold!important;
+  margin-left: 12% !important;
+
+}
+
+.navlink {
+  color: black !important;
+  text-decoration: none;
+  padding-bottom: 0 !important;
+}
+
+
+  .navbar a:hover {
+    border-bottom: 3px solid #f9b233 !important;
+  }
+  
+  
+
+ .underline{
+    
+    width: 60% !important;
+    height: 1px !important;
+    background-color: black;
+    border: none !important;
+    position: absolute !important; 
+    margin-left: 19% !important;
+   
+    
+  }
+
+  
+
+  /* FOOTER */
+
+  
+
+  .carre_footer {
+    width:100%;
+    height:45vh;
+    background:#111427;
+    opacity: 1;
+    position: fix;
+    
+  }
+
+  .Yes_Footer{
+    width: 200px;
+    margin-top: 7%;
+
+    position: fixed !important;
+
+
+  }
+
+  .footer_hr{
+    width: 1px;
+    height: 250px;
+    background-color: #ffffff;
+    margin-left: 80%;
+    margin-top: -35%;
+  }
+
+  .contact{
+   margin-left: 25%;
+    margin-top: -18%; 
+  }
+
+  .contact_foot{
+    color: #ffffff;
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 30px;
+    margin-top: 6% ;
+   
+  }
+
+  .contact_foot2{
+    color: #ffffff; 
+    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; 
+    font-size: 20px;
+
+  }
+
+  .vertical{
+    width: 2%;
+    margin-top: 40%;
+    /* position: fixed; */
+}
+
+/* Accueil */
+
+ .logo_interro{
+   /* margin-left: 46% !important; */
+   width : 6%;
+ }
+
+ .Title_QSN{
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  /* margin-left: 38%; */
+  
+ }
+
+ .Inter_mois{
+   background-color: #111427 !important;
+   color: #ffffff;
+ }
+
+ .télé{
+   margin-left: 40%;
+   width: 20%;
+   padding: 3%;
+ }
+
+ .h3{
+   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+
+ }
+
+ .underline_yellow{
+   width: 30%;
+   margin-left: 35%;
+ }
+
+ .Underscore_Yellow{
+  width: 15%;
+   margin-left: 41%;
+   padding: 1%;
+ }
+
+ .Title_NDA{
+  font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+  /* margin-left: 36%; */
+ }
+
+ .logo_article{
+  width : 6%;
+  /* margin-left: 48% !important; */
+ }
+
+ .Underscore_Yellow_article{
+  width: 13%;
+  margin-left: 43% !important;
+}
+  
+ .text{
+   padding: 10%;
+ }
+
+ .text_NDA{
+   padding: 3%;
+ }
+
+ .team{
+   background-color: #f9b233 !important;
+ }
+
+ .underline_black{
+   width: 30%;
+   height: 2%;
+   padding: 3%;
+ }
+
+ .equipe{
+   width: 15%;
+   padding-top: 2%;
+ }
+
+ .Underscore_Yellow_ping{
+  width: 13%;
+  margin-left: 43% !important;
+
+ 
