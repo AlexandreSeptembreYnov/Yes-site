@@ -1,7 +1,7 @@
-hr{
-  margin: 100px auto;
-  width: 13%;
-  height: 10px;
+hr {
+  margin: 10px auto;
+  width: 10%;
+  height: 2px;
   background-color: #f90;
   border: none; /*on supprime le style par défaut*/
 }

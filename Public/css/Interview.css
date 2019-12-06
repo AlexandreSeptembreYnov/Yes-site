@@ -1,0 +1,36 @@
+hr {
+  margin: 10px auto;
+  width: 10%;
+  height: 2px;
+  background-color: #f90;
+  border: none; /*on supprime le style par défaut*/
+}
+
+.article {
+    padding: 10px 1px;
+    font-weight: 350;
+    font-size: 25px;
+}
+
+.article1 {
+    width: 8%;
+}
+
+.video1 {
+    width: 58%;
+}
+
+.video2 {
+    width: 10%;
+    padding: 10px 1px;
+}
+
+.hr1 {
+  width: 75%;
+  height: 10px;
+  height: 2px;
+  background-color: black;
+  border: none; /*on supprime le style par défaut*/
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
