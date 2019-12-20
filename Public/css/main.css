@@ -73,19 +73,11 @@ body, html {
     width: 200px;
     margin-top: 7%;
 
-    position: fixed !important;
+    /* position: fixed !important; */
 
 
   }
-
-  .footer_hr{
-    width: 1px;
-    height: 250px;
-    background-color: #ffffff;
-    margin-left: 80%;
-    margin-top: -35%;
-  }
-
+  
   .contact{
    margin-left: 25%;
     margin-top: -18%; 
@@ -108,8 +100,8 @@ body, html {
 
   .vertical{
     width: 2%;
-    margin-top: 40%;
-    /* position: fixed; */
+    margin-top: 10%;
+    /* position: absolute; */
 }
 
 /* Accueil */
