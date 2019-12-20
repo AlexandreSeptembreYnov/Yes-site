@@ -38,6 +38,7 @@ input {
   margin: auto;
   max-width: 50%;
   padding: .5rem;
+  z-index: 1;
 }
 .login-text {
   background: hsl(40,30,60);
@@ -124,4 +125,14 @@ input {
   to {
     -webkit-filter: grayscale(30%) hue-rotate(360deg);
   }
+}
+
+.yes {
+  width: 33vw;
+  height: 15vw;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%,-50%);
+  z-index: 0;
 }
