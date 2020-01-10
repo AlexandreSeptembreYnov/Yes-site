@@ -39,6 +39,10 @@ body, html {
   .navbar a:hover {
     border-bottom: 3px solid #f9b233 !important;
   }
+
+  .textnav{
+    font-size: 200%;
+  }
   
   
 
