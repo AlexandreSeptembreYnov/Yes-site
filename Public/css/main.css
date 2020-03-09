@@ -240,3 +240,6 @@ hr {
     background-color: #f90;
     border: none; /*on supprime le style par défaut*/
 }
+.img-caroussel{
+    width: 70%;
+}

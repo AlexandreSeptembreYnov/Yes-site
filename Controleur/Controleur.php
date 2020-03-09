@@ -4,6 +4,7 @@ require('Model/modelArticle.php');
 require('Model/modelColaborateur.php');
 require('Model/modelInterview.php');
 require('Model/modelMiniSerie.php');
+require('Model/modelVideo.php');
 
 function admin()
 {
@@ -56,6 +57,16 @@ function Interview($id)
     $voila = "INTERVIEW";
     require ("Vue/vueHeader.html");
     require('Vue/vueInterview.php');
+    require ("Vue/Footer-View.html");
+}
+function Video()
+{
+    $video = getLastVideo();
+    $listeVideo = getVideo();
+    $logo = "Tv.png";
+    $voila = "VIDEO";
+    require ("Vue/vueHeader.html");
+    require('Vue/vueVideo.php');
     require ("Vue/Footer-View.html");
 }
 function LastInterview()

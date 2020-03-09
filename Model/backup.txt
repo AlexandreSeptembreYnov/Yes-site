@@ -1,10 +1,5 @@
-interview		id/titre/video/description
-article id/description/titre/image/type
-miniserie id/titre/video/description
-colabo id/nom/image/lien
-admin id/username/password
-
-
+CREATE DATABASE db_yes;
+use db_yes;
 CREATE TYPE categorie AS ENUM ('Metier', 'Startup');
 CREATE TABLE Interview
 (
@@ -44,4 +39,12 @@ CREATE TABLE Admin
 	idAdmin int PRIMARY KEY NOT NULL AUTO_INCREMENT,
 	username varchar(50) NOT NULL,
 	password varchar(50) NOT NULL
+);
+CREATE TABLE Video
+(
+	idVideo int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+	Titre varchar(300) NOT NULL,
+	Video varchar(5000),
+	Description varchar(5000),
+	DatePublication DATE
 );

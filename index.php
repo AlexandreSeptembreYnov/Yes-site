@@ -34,6 +34,8 @@ if (isset($_GET['action'])) {
         LastMiniSerie();
     } elseif ($_GET['action'] == 'Collaborateur') {
         Collaborateur();
+    } elseif ($_GET['action'] == 'Video') {
+        Video();
     } elseif ($_GET['action'] == 'addCollaborateur') {
 
         if (isset($_FILES['image']['tmp_name'])) {
@@ -47,7 +49,9 @@ if (isset($_GET['action'])) {
             imagecopyresampled($im_miniature, $im, 0, 0, 0, 0, $largeur_miniature, $hauteur_miniature, $largeur, $hauteur);
             imagejpeg($im_miniature, 'Public/images/' . $_FILES['image']['name'], 90);
             $Image = '"Public/Images' . $_FILES['image']['name'] . '"';
+            addCollaboration($_POST['titre'], $_POST['description'],$Image);
         }
+
 
     } elseif ($_GET['action'] == 'addInterview') {
 
@@ -63,8 +67,9 @@ if (isset($_GET['action'])) {
                 imagecopyresampled($im_miniature, $im, 0, 0, 0, 0, $largeur_miniature, $hauteur_miniature, $largeur, $hauteur);
                 imagejpeg($im_miniature, 'Public/images/' . $_FILES['image']['name'], 90);
                 $Image = '"Public/Images' . $_FILES['image']['name'] . '"';
+                addInterview($_POST['titre'], $Image, $_POST['description']);
             }
-            addInterview($_POST['titre'], $_POST['description'], $_POST['lien'], $Image);
+
             if (isset($_SESSION['id']) && $_SESSION['id'] == 25) {
                 admin();
             } else {
