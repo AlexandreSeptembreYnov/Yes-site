@@ -1,18 +1,9 @@
-<!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Interview</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="..\Public\css\Interview.css">
-  </head>
-  <body>
-    <body>
+
       <div class="container">
     <div class="row">
       <div class="col">
-        <div class="article" style="text-align: center"> <img class="article1"src="../Public/images/tv.png">
-          <hr><p>INTERVIEW</p>
+        <div class="article" style="text-align: center"> <img class="article1"src="../Public/images/<?php echo $logo?>">
+          <hr><p><?php echo $voila ?></p>
         </div>
         </div>
       </div>
@@ -41,6 +32,6 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
 
   </div>
 </div>
+    </div>
+      </div>
 
-    </body>
-  </html>

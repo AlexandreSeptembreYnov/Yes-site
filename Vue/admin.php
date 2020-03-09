@@ -56,8 +56,12 @@ require_once('Model/modelMiniSerie.php');
         <label for="titre">Video :</label>
         <input type="text" name="lien"/>
     </div>
+    <div>
+        <label for="image">Miniature :</label>
+        <input type="file"  value="" name="image">
+    </div>
     <input type="submit" value="Valider" />
-</form>
+    </form>
 </div>
 <h2>MiniSerie</h2>
 <form action="/index.php?action=addMiniSerie" method="post">
@@ -73,6 +77,10 @@ require_once('Model/modelMiniSerie.php');
     <div>
         <label for="titre">Video :</label>
         <input type="text" name="lien"/>
+    </div>
+    <div>
+        <label for="image">Miniature :</label>
+        <input type="file"  value="" name="image">
     </div>
     <input type="submit" value="Valider" />
 </form>
@@ -101,7 +109,7 @@ require_once('Model/modelMiniSerie.php');
     <select name="article"> 
         <?php
         $db = dbConnect();
-        $req = $db->prepare('SELECT idArticle, Titre, Description, Image, Categorie, datePublication FROM article ORDER BY datePublication DESC ;');
+        $req = $db->prepare('SELECT idArticle, Titre FROM article ORDER BY datePublication DESC ;');
         $req->execute([]);
         $article = $req->fetchALL();
         foreach($article as $key){ ?>

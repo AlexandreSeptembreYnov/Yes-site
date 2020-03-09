@@ -1,41 +1,32 @@
-<!DOCTYPE html>
-<html lang="en">
+<br><br><br>
+<div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../Public/css/main.css">
-    <title>Yes ! - Accueil</title>
-</head>
-
-<body>
-    <div>
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <img src="../Public/images/interrogation.png" class="logo_interro rounded mx-auto d-block"
+                    <img src="Public/images/interrogation.png" class="logo_interro rounded mx-auto d-block"
                         alt="Point Interrogation Yes ! ">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <img src="../Public/images/underline_yellow.png" class="Underscore_Yellow  mx-auto d-block"
+                    <img src="Public/images/underline_yellow.png" class="Underscore_Yellow  mx-auto d-block"
                         alt="Ligne Jaune">
                 </div>
+                <br>
             </div>
             <div class="row">
                 <div class="col-12 Title_QSN">
                     <h3 class="text-center">QUI SOMMES NOUS ?</h3>
+                   
                 </div>
             </div>
+            <br>
             <div class="row">
                 <div class="col-md-4"></div>
                 <div class="col-md-4 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab ea
                     error dolorem eveniet esse ducimus. Reprehenderit repellendus quisquam cumque doloremque quis culpa
-                    alias. Quis officia quidem eum autem laborum?</div>
+                    alias. Quis officia quidem eum autem laborum?</div><br><br>
                 <div class="col-md-4"></div>
             </div>
             <br>
@@ -69,6 +60,7 @@
             </div><br><br>
             <div class="row">
                 <div class="col-12">
+
                     <img src="../Public/images/article.png" class="logo_article rounded mx-auto d-block"
                         alt="Article Yes ! ">
                 </div>
@@ -91,7 +83,7 @@
                     <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique sapiente
                         dignissimos placeat, magni nemo recusandae hic excepturi iusto animi tempore, qui quas labore et
                         adipisci velit, possimus quo blanditiis. Ducimus!</p>
-                </div>
+                </div><br><br>
             </div>
             <div class="row">
                 <div class="col-6 team">
@@ -108,7 +100,7 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-12 text-justify text">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ab ea error dolorem eveniet
+                            orem ipsum dolor sit amet consectetur adipisicing elit. Qui ab ea error dolorem eveniet
                             esse ducimus. Reprehenderit repellendus quisquam cumque doloremque quis culpa alias. Quis
                             officia quidem eum autem laborum?
                         </div>
@@ -121,13 +113,14 @@
             </div>
             <div class="row" style="padding-top: 2%">
                 <div class="col-12">
-                    <img src="../Public/images/ping.png" class="logo_article rounded mx-auto d-block"
+                    <br><br>
+                    <img src="Public/images/ping.png" class="logo_article rounded mx-auto d-block"
                         alt="Article Yes ! ">
                 </div>
             </div>
             <div class="row">
                 <div class="col-12">
-                    <img src="../Public/images/underline_yellow.png" class="Underscore_Yellow_ping mx-auto d-block"
+                    <img src="Public/images/underline_yellow.png" class="Underscore_Yellow_ping mx-auto d-block"
                         style="padding: 1%" alt="Ligne Jaune">
                 </div>
             </div>
@@ -150,6 +143,3 @@
 
 
         </div>
-</body>
-
-</html>

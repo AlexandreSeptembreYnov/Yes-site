@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="..\Public\css\formulaireAdmin.css">
   </head>
   <body>
+  <img src="Public/image/">
     <form action="../index.php?action=admin" method="post" class="login-form">
         <p class="login-text">
     <span class="fa-stack fa-lg">

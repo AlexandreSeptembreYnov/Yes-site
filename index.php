@@ -49,19 +49,22 @@ if (isset($_GET['action'])) {
             $Image = '"Public/Images' . $_FILES['image']['name'] . '"';
         }
 
-        if (isset($_POST['titre']) and isset($_POST['description'])) {
-            addCollaboration($_POST['titre'], $_POST['description'], $Image);
-            if (isset($_SESSION['id']) && $_SESSION['id'] == 25) {
-                admin();
-            } else {
-                Connection();
-            }
-        }
-
     } elseif ($_GET['action'] == 'addInterview') {
 
         if (isset($_POST['titre']) and isset($_POST['description']) and isset($_POST['lien'])) {
-            addInterview($_POST['titre'], $_POST['description'], $_POST['lien']);
+            if (isset($_FILES['image']['tmp_name'])) {
+                $taille = getimagesize($_FILES['image']['tmp_name']);
+                $largeur = $taille[0];
+                $hauteur = $taille[1];
+                $largeur_miniature = 300;
+                $hauteur_miniature = $hauteur / $largeur * 300;
+                $im = imagecreatefrompng($_FILES['image']['tmp_name']);
+                $im_miniature = imagecreatetruecolor($largeur_miniature, $hauteur_miniature);
+                imagecopyresampled($im_miniature, $im, 0, 0, 0, 0, $largeur_miniature, $hauteur_miniature, $largeur, $hauteur);
+                imagejpeg($im_miniature, 'Public/images/' . $_FILES['image']['name'], 90);
+                $Image = '"Public/Images' . $_FILES['image']['name'] . '"';
+            }
+            addInterview($_POST['titre'], $_POST['description'], $_POST['lien'], $Image);
             if (isset($_SESSION['id']) && $_SESSION['id'] == 25) {
                 admin();
             } else {
@@ -71,7 +74,19 @@ if (isset($_GET['action'])) {
     } elseif ($_GET['action'] == 'addMiniSerie') {
 
         if (isset($_POST['titre']) and isset($_POST['description']) and isset($_POST['lien'])) {
-            addMiniSerie($_POST['titre'], $_POST['description'], $_POST['lien']);
+            if (isset($_FILES['image']['tmp_name'])) {
+                $taille = getimagesize($_FILES['image']['tmp_name']);
+                $largeur = $taille[0];
+                $hauteur = $taille[1];
+                $largeur_miniature = 300;
+                $hauteur_miniature = $hauteur / $largeur * 300;
+                $im = imagecreatefrompng($_FILES['image']['tmp_name']);
+                $im_miniature = imagecreatetruecolor($largeur_miniature, $hauteur_miniature);
+                imagecopyresampled($im_miniature, $im, 0, 0, 0, 0, $largeur_miniature, $hauteur_miniature, $largeur, $hauteur);
+                imagejpeg($im_miniature, 'Public/images/' . $_FILES['image']['name'], 90);
+                $Image = '"Public/Images' . $_FILES['image']['name'] . '"';
+            }
+            addMiniSerie($_POST['titre'], $_POST['description'], $_POST['lien'],$Image);
         }
         if (isset($_SESSION['id']) && $_SESSION['id'] == 25) {
             admin();

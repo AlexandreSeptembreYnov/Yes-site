@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Video</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="C:\Users\charl\Desktop\Yes-site\Public\css\Interview.css">
+    <link rel="stylesheet" href="../Public/css/Interview.css">
   </head>
   <body>
     <body>
@@ -17,7 +17,7 @@
         </div>
       </div>
       <div class="container">
-  <div class="flex-row" style="text-align: center">
+  <div class="flex-row" style="text-align: center   ">
 
       <iframe class="video1" width="420" height="315"
 src="https://www.youtube.com/embed/tgbNymZ7vqY">

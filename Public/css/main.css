@@ -25,8 +25,10 @@ body, html {
 
 .navbar{
   font-family: "Bebas Neue", Bold!important;
-  margin-left: 12% !important;
-
+  font-size: 33px; 
+/*  margin-left: 12% !important;
+*/
+	
 }
 
 .navlink {
@@ -159,7 +161,7 @@ body, html {
 
  .logo_article{
   width : 6%;
-  /* margin-left: 48% !important; */
+  margin-left: 48% !important;
  }
 
  .Underscore_Yellow_article{
@@ -193,5 +195,48 @@ body, html {
  .Underscore_Yellow_ping{
   width: 13%;
   margin-left: 43% !important;
+ }
 
- 
+hr {
+    margin: 10px auto;
+    width: 10%;
+    height: 2px;
+    background-color: #f90;
+    border: none; /on supprime le style par défaut/
+}
+
+.header-img {
+    width: 500px;
+    margin-left: 25%;
+    margin-top: 3%;
+}
+.article {
+    padding: 50px 5px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.article1 {
+    width: 60px;
+}
+.collaboration{
+    width: 40%;
+    padding-bottom: 20%;
+
+}
+
+.collab {
+    padding: 50px 5px;
+    font-weight: 700;
+    font-size: 25px;
+}
+.collab1 {
+    width: 60px;
+}
+
+hr {
+    margin: 10px auto;
+    width: 10%;
+    height: 2px;
+    background-color: #f90;
+    border: none; /*on supprime le style par défaut*/
+}

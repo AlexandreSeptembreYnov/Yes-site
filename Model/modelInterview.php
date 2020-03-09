@@ -3,7 +3,7 @@ require_once('dbConnection.php');
 function getInterview()
 {
     $db = dbConnect();
-    $req = $db->prepare('SELECT idInterview, Titre, Description, Video, datePublication FROM interview ORDER BY datePublication DESC ;');
+    $req = $db->prepare('SELECT idInterview, Titre, Description, Video, datePublication, miniature FROM interview ORDER BY datePublication DESC ;');
     $req->execute();
     $post = $req->fetch();
 
@@ -13,7 +13,7 @@ function getInterview()
 function getOneInterview($idInterview)
 {
     $db = dbConnect();
-    $req = $db->prepare('SELECT idInterview, Titre, Description, Video, datePublication FROM interview WHERE idInterview = ?;');
+    $req = $db->prepare('SELECT idInterview, Titre, Description, Video, datePublication, miniature FROM interview WHERE idInterview = ?;');
     $req->execute([$idInterview]);
     $post = $req->fetch();
 
@@ -23,19 +23,19 @@ function getOneInterview($idInterview)
 function getLastInterview()
 {
     $db = dbConnect();
-    $req = $db->prepare('SELECT idInterview, Titre, Description, Video,datePublication FROM interview ORDER BY datePublication DESC LIMIT 1;');
+    $req = $db->prepare('SELECT idInterview, Titre, Description, Video,datePublication, miniature FROM interview ORDER BY datePublication DESC LIMIT 1;');
     $req->execute();
     $post = $req->fetch();
 
     return $post;
 }
 
-function addInterview($Titre, $Description, $Video)
+function addInterview($Titre, $Description, $Video, $Image)
 {
     $db = dbConnect();
     try {
-        $req = $db->prepare('INSERT INTO interview (Titre, Description, Video, datePublication) VALUES (?, ?, ?, NOW());');
-        $req->execute([$Titre, $Description, $Video]);
+        $req = $db->prepare('INSERT INTO interview (Titre, Description, Video, datePublication, miniature) VALUES (?, ?, ?, NOW(), ?);');
+        $req->execute([$Titre, $Description, $Video, $Image]);
         return True;
     } catch (Exception $e) {
         die('Erreur : ' . $e->getMessage());
